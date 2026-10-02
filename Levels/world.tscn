@@ -27,6 +27,7 @@ transform = Transform3D(45, 0, 0, 0, 1, 0, 0, 0, 45, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_lhmx6")
 
 [node name="FinishLine" parent="." unique_id=2033768818 instance=ExtResource("2_ks8n1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10309839, 0.22560477, -0.3596201)
 
 [node name="PlayerBoat" parent="." unique_id=1730264270 instance=ExtResource("2_kycxd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2092073, 0)
