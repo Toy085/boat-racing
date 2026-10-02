@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dbr03xyea7cla"]
 
 [ext_resource type="Material" path="res://Materials/EA_Water_Tropical.tres" id="1_pbelu"]
+[ext_resource type="Script" uid="uid://d2t8y3frv26xt" path="res://Scripts/game_manager.gd" id="1_rljl1"]
 [ext_resource type="PackedScene" uid="uid://hbyjpgs4h3v4" path="res://Characters/finish_gate.tscn" id="2_ks8n1"]
 [ext_resource type="PackedScene" uid="uid://dgouuwaibpnmn" path="res://Characters/player_boat.tscn" id="2_kycxd"]
 [ext_resource type="PackedScene" uid="uid://besu364jdjdq2" path="res://Models/World/Blocks/block-grass-hexagon.glb" id="3_4dvsh"]
@@ -25,7 +26,10 @@ sky_material = SubResource("PanoramaSkyMaterial_oxqbs")
 background_mode = 2
 sky = SubResource("Sky_m15cp")
 
-[node name="World" type="Node3D" unique_id=322966080]
+[node name="World" type="Node3D" unique_id=322966080 node_paths=PackedStringArray("checkpoints", "finish")]
+script = ExtResource("1_rljl1")
+checkpoints = [NodePath("CheckpointGate3"), NodePath("CheckpointGate"), NodePath("CheckpointGate2")]
+finish = NodePath("finish_gate")
 
 [node name="PlayerBoat" parent="." unique_id=1208065960 instance=ExtResource("2_kycxd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4057465, 0)
@@ -41,7 +45,7 @@ mesh = SubResource("PlaneMesh_kycxd")
 transform = Transform3D(45, 0, 0, 0, 45, 0, 0, 0, 45, 0, -22.52, 0)
 shape = SubResource("BoxShape3D_lhmx6")
 
-[node name="finish_gate" parent="." unique_id=2033768818 instance=ExtResource("2_ks8n1")]
+[node name="finish_gate" parent="." unique_id=2033768818 groups=["Finish"] instance=ExtResource("2_ks8n1")]
 transform = Transform3D(0.9320205, 0, 0.36240557, 0, 1, 0, -0.36240557, 0, 0.9320205, 13.669798, 0, 96.4728)
 
 [node name="block-grass-hexagon2" parent="." unique_id=1473153504 instance=ExtResource("3_4dvsh")]
