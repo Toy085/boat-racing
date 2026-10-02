@@ -23,14 +23,14 @@ mesh = SubResource("PlaneMesh_kycxd")
 [node name="StaticBody3D" type="StaticBody3D" parent="Water" unique_id=699733663]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Water/StaticBody3D" unique_id=705448665]
-transform = Transform3D(45, 0, 0, 0, 45, 0, 0, 0, 45, 0, -22.5, 0)
+transform = Transform3D(45, 0, 0, 0, 45, 0, 0, 0, 45, 0, -22.52, 0)
 shape = SubResource("BoxShape3D_lhmx6")
 
 [node name="FinishLine" parent="." unique_id=2033768818 instance=ExtResource("2_ks8n1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10309839, 0.22560477, -0.3596201)
 
 [node name="PlayerBoat" parent="." unique_id=1730264270 instance=ExtResource("2_kycxd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2092073, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7614372, 0)
 script = null
 
 [node name="block-grass-hexagon2" parent="." unique_id=1473153504 instance=ExtResource("3_4dvsh")]
