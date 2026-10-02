@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dbr03xyea7cla"]
 
 [ext_resource type="Material" path="res://Materials/EA_Water_Tropical.tres" id="1_pbelu"]
+[ext_resource type="PackedScene" uid="uid://dgouuwaibpnmn" path="res://Characters/player_boat.tscn" id="2_kycxd"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_kycxd"]
 size = Vector2(44, 44)
@@ -13,3 +14,5 @@ subdivide_depth = 44
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 material_override = ExtResource("1_pbelu")
 mesh = SubResource("PlaneMesh_kycxd")
+
+[node name="PlayerBoat" parent="." unique_id=1730264270 instance=ExtResource("2_kycxd")]

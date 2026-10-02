@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dgouuwaibpnmn"]
+
+[ext_resource type="PackedScene" uid="uid://bnfoq6wrvndd8" path="res://Models/boats/boat-speed-a.glb" id="1_qwkd3"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0teyg"]
+size = Vector3(1.3907242, 0.57180405, 2.472701)
+
+[node name="PlayerBoat" type="Node3D" unique_id=1730264270]
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1451402525]
+
+[node name="boat-speed-a2" parent="CharacterBody3D" unique_id=1986020248 instance=ExtResource("1_qwkd3")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=627990993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004108429, 0.5514431, -0.14160585)
+shape = SubResource("BoxShape3D_0teyg")
