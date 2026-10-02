@@ -14,7 +14,7 @@ physics_material_override = SubResource("PhysicsMaterial_gu30w")
 inertia = Vector3(0, 0.2, 0)
 script = ExtResource("1_gu30w")
 speed = 10.0
-rotation_speed = 5.0
+rotation_speed = 2.0
 
 [node name="Model" parent="." unique_id=1986020248 instance=ExtResource("1_qwkd3")]
 
