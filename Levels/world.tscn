@@ -20,7 +20,9 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 material_override = ExtResource("1_pbelu")
 mesh = SubResource("PlaneMesh_kycxd")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Water" unique_id=705448665]
+[node name="StaticBody3D" type="StaticBody3D" parent="Water" unique_id=699733663]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Water/StaticBody3D" unique_id=705448665]
 transform = Transform3D(45, 0, 0, 0, 1, 0, 0, 0, 45, 0, -0.5, 0)
 shape = SubResource("BoxShape3D_lhmx6")
 
