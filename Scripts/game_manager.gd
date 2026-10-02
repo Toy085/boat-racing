@@ -19,7 +19,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		if about_to_finish:
 			print("You finished!")
 			finish_screen.show()
-			#get_tree().paused = true
+			get_tree().paused = true
 			return
 		
 		remaining_checkpoints[0].body_entered.disconnect(_on_area_3d_body_entered)
