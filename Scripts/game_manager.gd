@@ -17,7 +17,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 			print("You finished!")
 			finish.hide()
 			finish_screen.show()
-			get_tree().paused = true
+			#get_tree().paused = true
 			return
 		
 		checkpoints[0].hide()

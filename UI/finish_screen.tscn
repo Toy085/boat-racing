@@ -1,5 +1,13 @@
 [gd_scene format=3 uid="uid://dgiokvv4r13xo"]
 
+[ext_resource type="Script" uid="uid://dddfshtevliq8" path="res://UI/restart.gd" id="1_ee7yg"]
+
+[sub_resource type="Theme" id="Theme_lhmx6"]
+default_font_size = 25
+
+[sub_resource type="Theme" id="Theme_0teyg"]
+default_font_size = 72
+
 [node name="Finish screen" type="Control" unique_id=1503192447]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +15,40 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_default_cursor_shape = 2
+accessibility_name = "Restart"
+accessibility_description = "Restarts the level"
+theme = SubResource("Theme_lhmx6")
+script = ExtResource("1_ee7yg")
+
+[node name="Button" type="Button" parent="." unique_id=1192610604]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.43
+anchor_top = 0.583
+anchor_right = 0.54800004
+anchor_bottom = 0.651
+offset_left = -0.36001587
+offset_top = 0.21600342
+offset_right = -0.2960205
+offset_bottom = 0.15197754
+text = "Restart"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=191139600]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 279.0
+offset_top = 250.0
+offset_right = -263.0
+offset_bottom = -299.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_0teyg")
+text = "Level finished!"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
