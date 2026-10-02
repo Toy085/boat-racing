@@ -1,3 +1,4 @@
+@icon("res://addons/at-icons/node/boat.svg")
 extends RigidBody3D
 
 @export var speed: float = 20.0

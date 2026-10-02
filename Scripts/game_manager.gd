@@ -1,3 +1,4 @@
+@icon("res://addons/at-icons/node/joypad.svg")
 extends Node3D
 
 @export var checkpoints: Array[Area3D] 
