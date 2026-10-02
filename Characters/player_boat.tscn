@@ -1,19 +1,21 @@
 [gd_scene format=3 uid="uid://dgouuwaibpnmn"]
 
+[ext_resource type="Script" uid="uid://7dn2ri8ru4d6" path="res://Scripts/player/boat_controls.gd" id="1_gu30w"]
 [ext_resource type="PackedScene" uid="uid://bnfoq6wrvndd8" path="res://Models/boats/boat-speed-a.glb" id="1_qwkd3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0teyg"]
-size = Vector3(1.3907242, 0.57180405, 2.472701)
+size = Vector3(1.4, 0.5, 2.5)
 
-[node name="PlayerBoat" type="Node3D" unique_id=1730264270]
+[node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960]
+script = ExtResource("1_gu30w")
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1451402525]
+[node name="Model" parent="." unique_id=1986020248 instance=ExtResource("1_qwkd3")]
 
-[node name="boat-speed-a2" parent="CharacterBody3D" unique_id=1986020248 instance=ExtResource("1_qwkd3")]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=627990993]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004108429, 0.5514431, -0.14160585)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=627990993]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.1)
 shape = SubResource("BoxShape3D_0teyg")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=1776240991]
-transform = Transform3D(-0.9996344, -0.015846144, 0.021908991, -0.004134942, 0.8903339, 0.4552892, -0.026720906, 0.45503223, -0.89007396, -0.00718832, 2.8778791, -6.5612636)
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1776240991]
+transform = Transform3D(-1, -2.9900352e-08, 8.215054e-08, 0, 0.9396927, 0.34202015, -8.742278e-08, 0.34202015, -0.9396927, -0.007, 4, -4.5)
+current = true
+fov = 90.0
