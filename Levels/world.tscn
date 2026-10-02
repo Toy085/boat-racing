@@ -29,6 +29,7 @@ shape = SubResource("BoxShape3D_lhmx6")
 [node name="FinishLine" parent="." unique_id=2033768818 instance=ExtResource("2_ks8n1")]
 
 [node name="PlayerBoat" parent="." unique_id=1730264270 instance=ExtResource("2_kycxd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2092073, 0)
 script = null
 
 [node name="block-grass-hexagon2" parent="." unique_id=1473153504 instance=ExtResource("3_4dvsh")]
