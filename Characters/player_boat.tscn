@@ -6,17 +6,16 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_0teyg"]
 size = Vector3(1.4, 0.5, 2.5)
 
-[node name="PlayerBoat" type="Node3D" unique_id=1730264270]
+[node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960]
 script = ExtResource("1_gu30w")
 
 [node name="Model" parent="." unique_id=1986020248 instance=ExtResource("1_qwkd3")]
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1451402525]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=627990993]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=627990993]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.1)
 shape = SubResource("BoxShape3D_0teyg")
 
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=1776240991]
-transform = Transform3D(-1, -2.990035e-08, 8.2150535e-08, 0, 0.9396926, 0.34202012, -8.742278e-08, 0.34202012, -0.9396926, -0.007, 4, -4.5)
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1776240991]
+transform = Transform3D(-1, -2.9900352e-08, 8.215054e-08, 0, 0.9396927, 0.34202015, -8.742278e-08, 0.34202015, -0.9396927, -0.007, 4, -4.5)
+current = true
 fov = 90.0
