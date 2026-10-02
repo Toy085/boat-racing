@@ -3,13 +3,17 @@
 [ext_resource type="Script" uid="uid://7dn2ri8ru4d6" path="res://Scripts/player/boat_controls.gd" id="1_gu30w"]
 [ext_resource type="PackedScene" uid="uid://bnfoq6wrvndd8" path="res://Models/boats/boat-speed-a.glb" id="1_qwkd3"]
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gu30w"]
+friction = 0.7
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_0teyg"]
 size = Vector3(1.4, 0.72631836, 2.42688)
 
 [node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960 groups=["player"]]
-inertia = Vector3(0, 2.5, 0)
+physics_material_override = SubResource("PhysicsMaterial_gu30w")
+inertia = Vector3(0, 0.2, 0)
 script = ExtResource("1_gu30w")
-speed = 15.0
+speed = 10.0
 rotation_speed = 5.0
 
 [node name="Model" parent="." unique_id=1986020248 instance=ExtResource("1_qwkd3")]

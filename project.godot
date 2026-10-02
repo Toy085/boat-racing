@@ -13,6 +13,7 @@ config_version=5
 config/name="Boat racing"
 run/main_scene="uid://dbr03xyea7cla"
 config/features=PackedStringArray("4.7")
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [editor_plugins]
