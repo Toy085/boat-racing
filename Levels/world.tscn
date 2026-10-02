@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dbr03xyea7cla"]
 
 [ext_resource type="Material" path="res://Materials/EA_Water_Tropical.tres" id="1_pbelu"]
+[ext_resource type="PackedScene" uid="uid://hbyjpgs4h3v4" path="res://Levels/finish_gate.tscn" id="2_ks8n1"]
 [ext_resource type="PackedScene" uid="uid://dgouuwaibpnmn" path="res://Characters/player_boat.tscn" id="2_kycxd"]
 [ext_resource type="PackedScene" uid="uid://besu364jdjdq2" path="res://Models/World/Blocks/block-grass-hexagon.glb" id="3_4dvsh"]
 [ext_resource type="PackedScene" uid="uid://bbq5hwxyyb3oo" path="res://Models/World/Blocks/block-grass-large-slope-narrow.glb" id="4_ks8n1"]
@@ -10,6 +11,8 @@ size = Vector2(44, 44)
 subdivide_width = 44
 subdivide_depth = 44
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_lhmx6"]
+
 [node name="World" type="Node3D" unique_id=322966080]
 
 [node name="Water" type="MeshInstance3D" parent="." unique_id=1180752535]
@@ -17,7 +20,14 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 material_override = ExtResource("1_pbelu")
 mesh = SubResource("PlaneMesh_kycxd")
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Water" unique_id=705448665]
+transform = Transform3D(45, 0, 0, 0, 1, 0, 0, 0, 45, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_lhmx6")
+
+[node name="FinishLine" parent="." unique_id=2033768818 instance=ExtResource("2_ks8n1")]
+
 [node name="PlayerBoat" parent="." unique_id=1730264270 instance=ExtResource("2_kycxd")]
+script = null
 
 [node name="block-grass-hexagon2" parent="." unique_id=1473153504 instance=ExtResource("3_4dvsh")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -9, -3, 0)
