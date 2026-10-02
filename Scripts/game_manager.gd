@@ -4,6 +4,8 @@ extends Node3D
 @export var checkpoints: Array[Area3D] 
 @export var finish: Area3D
 
+@onready var finish_screen: Control = $"UI/Finish screen"
+
 var about_to_finish: bool = false
 
 func _ready() -> void:
@@ -14,6 +16,8 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		if about_to_finish:
 			print("You finished!")
 			finish.hide()
+			finish_screen.show()
+			get_tree().paused = true
 			return
 		
 		checkpoints[0].hide()

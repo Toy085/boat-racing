@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://bbq5hwxyyb3oo" path="res://Models/World/Blocks/block-grass-large-slope-narrow.glb" id="4_ks8n1"]
 [ext_resource type="PackedScene" uid="uid://bcpvlywiqiicm" path="res://Characters/checkpoint_gate.tscn" id="6_x5oxt"]
 [ext_resource type="Texture2D" uid="uid://b52xgma58gv1j" path="res://kenney_skyboxes/Skyboxes/skybox-alien.png" id="7_vqnaq"]
+[ext_resource type="PackedScene" uid="uid://dgiokvv4r13xo" path="res://UI/finish_screen.tscn" id="9_06jdw"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_kycxd"]
 size = Vector2(44, 44)
@@ -73,3 +74,6 @@ transform = Transform3D(0.9659258, -0.22414386, -0.12940954, 0, -0.50000006, 0.8
 environment = SubResource("Environment_doqwu")
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1529593538]
+
+[node name="Finish screen" parent="UI" unique_id=1503192447 instance=ExtResource("9_06jdw")]
+visible = false
