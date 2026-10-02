@@ -50,3 +50,6 @@ transform = Transform3D(0.82103324, 0, 0.5708804, 0, 1, 0, -0.5708804, 0, 0.8210
 
 [node name="CheckpointGate3" parent="." unique_id=384911336 instance=ExtResource("6_x5oxt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 28.81)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=142071489]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
