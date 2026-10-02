@@ -29,7 +29,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 			remaining_checkpoints[0].body_entered.connect(_on_area_3d_body_entered)
 		elif remaining_checkpoints.is_empty():
 			lap -= 1
-			if lap >= 0:
+			if lap >= 1:
 				remaining_checkpoints = checkpoints.duplicate()
 				remaining_checkpoints[0].body_entered.connect(_on_area_3d_body_entered)
 			else:
