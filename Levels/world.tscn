@@ -2,6 +2,8 @@
 
 [ext_resource type="Material" path="res://Materials/EA_Water_Tropical.tres" id="1_pbelu"]
 [ext_resource type="PackedScene" uid="uid://dgouuwaibpnmn" path="res://Characters/player_boat.tscn" id="2_kycxd"]
+[ext_resource type="PackedScene" uid="uid://besu364jdjdq2" path="res://Models/World/Blocks/block-grass-hexagon.glb" id="3_4dvsh"]
+[ext_resource type="PackedScene" uid="uid://bbq5hwxyyb3oo" path="res://Models/World/Blocks/block-grass-large-slope-narrow.glb" id="4_ks8n1"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_kycxd"]
 size = Vector2(44, 44)
@@ -16,3 +18,12 @@ material_override = ExtResource("1_pbelu")
 mesh = SubResource("PlaneMesh_kycxd")
 
 [node name="PlayerBoat" parent="." unique_id=1730264270 instance=ExtResource("2_kycxd")]
+
+[node name="block-grass-hexagon2" parent="." unique_id=1473153504 instance=ExtResource("3_4dvsh")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -9, -3, 0)
+
+[node name="block-grass-hexagon3" parent="." unique_id=728949636 instance=ExtResource("3_4dvsh")]
+transform = Transform3D(4.9999886, -0.010616017, 0, 0.010616017, 4.9999886, 0, 0, 0, 4.9999995, -11.5, -3, 4)
+
+[node name="block-grass-large-slope-narrow2" parent="." unique_id=228103507 instance=ExtResource("4_ks8n1")]
+transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, -9, -1.7, -7)
