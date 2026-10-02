@@ -6,7 +6,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_0teyg"]
 size = Vector3(1.4, 0.72631836, 2.42688)
 
-[node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960]
+[node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960 groups=["player"]]
 inertia = Vector3(0, 2.5, 0)
 script = ExtResource("1_gu30w")
 speed = 15.0
