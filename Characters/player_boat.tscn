@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bnfoq6wrvndd8" path="res://Models/boats/boat-speed-a.glb" id="1_qwkd3"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0teyg"]
-size = Vector3(1.4, 0.5, 2.5)
+size = Vector3(1.4, 0.72631836, 2.42688)
 
 [node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960]
 script = ExtResource("1_gu30w")
@@ -12,7 +12,7 @@ script = ExtResource("1_gu30w")
 [node name="Model" parent="." unique_id=1986020248 instance=ExtResource("1_qwkd3")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=627990993]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, -0.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.48684084, -0.13656005)
 shape = SubResource("BoxShape3D_0teyg")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1776240991]
