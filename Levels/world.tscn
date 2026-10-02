@@ -30,10 +30,6 @@ shape = SubResource("BoxShape3D_lhmx6")
 [node name="finish_gate" parent="." unique_id=2033768818 instance=ExtResource("2_ks8n1")]
 transform = Transform3D(0.9320205, 0, 0.36240557, 0, 1, 0, -0.36240557, 0, 0.9320205, 13.669798, 0, 96.4728)
 
-[node name="PlayerBoat" parent="." unique_id=1730264270 instance=ExtResource("2_kycxd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7614372, 0)
-script = null
-
 [node name="block-grass-hexagon2" parent="." unique_id=1473153504 instance=ExtResource("3_4dvsh")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -9, -3, 0)
 
