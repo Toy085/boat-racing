@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://besu364jdjdq2" path="res://Models/World/Blocks/block-grass-hexagon.glb" id="3_4dvsh"]
 [ext_resource type="PackedScene" uid="uid://bbq5hwxyyb3oo" path="res://Models/World/Blocks/block-grass-large-slope-narrow.glb" id="4_ks8n1"]
 [ext_resource type="PackedScene" uid="uid://bcpvlywiqiicm" path="res://Characters/checkpoint_gate.tscn" id="6_x5oxt"]
+[ext_resource type="Texture2D" uid="uid://b52xgma58gv1j" path="res://kenney_skyboxes/Skyboxes/skybox-alien.png" id="7_vqnaq"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_kycxd"]
 size = Vector2(44, 44)
@@ -13,6 +14,16 @@ subdivide_width = 44
 subdivide_depth = 44
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lhmx6"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_oxqbs"]
+panorama = ExtResource("7_vqnaq")
+
+[sub_resource type="Sky" id="Sky_m15cp"]
+sky_material = SubResource("PanoramaSkyMaterial_oxqbs")
+
+[sub_resource type="Environment" id="Environment_doqwu"]
+background_mode = 2
+sky = SubResource("Sky_m15cp")
 
 [node name="World" type="Node3D" unique_id=322966080]
 
@@ -52,4 +63,7 @@ transform = Transform3D(0.82103324, 0, 0.5708804, 0, 1, 0, -0.5708804, 0, 0.8210
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 28.81)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=142071489]
-transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 0, 0)
+transform = Transform3D(0.9659258, -0.22414386, -0.12940954, 0, -0.50000006, 0.8660254, -0.25881904, -0.83651626, -0.48296297, 0, 0, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=874031301]
+environment = SubResource("Environment_doqwu")
