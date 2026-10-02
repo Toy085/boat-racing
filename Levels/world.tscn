@@ -31,6 +31,7 @@ sky = SubResource("Sky_m15cp")
 script = ExtResource("1_rljl1")
 checkpoints = [NodePath("CheckpointGate3"), NodePath("CheckpointGate"), NodePath("CheckpointGate2")]
 finish = NodePath("finish_gate")
+lap = 3
 
 [node name="PlayerBoat" parent="." unique_id=1208065960 instance=ExtResource("2_kycxd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4057465, 0)
