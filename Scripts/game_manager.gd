@@ -17,6 +17,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		
 		checkpoints[0].hide()
 		checkpoints.remove_at(0)
+		
 		if checkpoints.size() > 0:
 			checkpoints[0].body_entered.connect(_on_area_3d_body_entered)
 		else:
