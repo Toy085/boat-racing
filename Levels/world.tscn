@@ -1,10 +1,11 @@
 [gd_scene format=3 uid="uid://dbr03xyea7cla"]
 
 [ext_resource type="Material" path="res://Materials/EA_Water_Tropical.tres" id="1_pbelu"]
-[ext_resource type="PackedScene" uid="uid://hbyjpgs4h3v4" path="res://Levels/finish_gate.tscn" id="2_ks8n1"]
+[ext_resource type="PackedScene" uid="uid://hbyjpgs4h3v4" path="res://Characters/finish_gate.tscn" id="2_ks8n1"]
 [ext_resource type="PackedScene" uid="uid://dgouuwaibpnmn" path="res://Characters/player_boat.tscn" id="2_kycxd"]
 [ext_resource type="PackedScene" uid="uid://besu364jdjdq2" path="res://Models/World/Blocks/block-grass-hexagon.glb" id="3_4dvsh"]
 [ext_resource type="PackedScene" uid="uid://bbq5hwxyyb3oo" path="res://Models/World/Blocks/block-grass-large-slope-narrow.glb" id="4_ks8n1"]
+[ext_resource type="PackedScene" uid="uid://bcpvlywiqiicm" path="res://Characters/checkpoint_gate.tscn" id="6_x5oxt"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_kycxd"]
 size = Vector2(44, 44)
@@ -26,8 +27,8 @@ mesh = SubResource("PlaneMesh_kycxd")
 transform = Transform3D(45, 0, 0, 0, 45, 0, 0, 0, 45, 0, -22.52, 0)
 shape = SubResource("BoxShape3D_lhmx6")
 
-[node name="FinishLine" parent="." unique_id=2033768818 instance=ExtResource("2_ks8n1")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10309839, 0.22560477, -0.3596201)
+[node name="finish_gate" parent="." unique_id=2033768818 instance=ExtResource("2_ks8n1")]
+transform = Transform3D(0.9320205, 0, 0.36240557, 0, 1, 0, -0.36240557, 0, 0.9320205, 13.669798, 0, 96.4728)
 
 [node name="PlayerBoat" parent="." unique_id=1730264270 instance=ExtResource("2_kycxd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7614372, 0)
@@ -41,3 +42,12 @@ transform = Transform3D(4.9999886, -0.010616017, 0, 0.010616017, 4.9999886, 0, 0
 
 [node name="block-grass-large-slope-narrow2" parent="." unique_id=228103507 instance=ExtResource("4_ks8n1")]
 transform = Transform3D(-5, 0, -4.371139e-07, 0, 5, 0, 4.371139e-07, 0, -5, -9, -1.7, -7)
+
+[node name="CheckpointGate" parent="." unique_id=1120603280 instance=ExtResource("6_x5oxt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 58.192932)
+
+[node name="CheckpointGate2" parent="." unique_id=1377619846 instance=ExtResource("6_x5oxt")]
+transform = Transform3D(0.82103324, 0, 0.5708804, 0, 1, 0, -0.5708804, 0, 0.82103324, 1.9427948, -0.2000122, 81.094986)
+
+[node name="CheckpointGate3" parent="." unique_id=384911336 instance=ExtResource("6_x5oxt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.2, 28.81)
