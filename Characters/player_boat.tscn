@@ -14,3 +14,6 @@ size = Vector3(1.3907242, 0.57180405, 2.472701)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=627990993]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004108429, 0.5514431, -0.14160585)
 shape = SubResource("BoxShape3D_0teyg")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D" unique_id=1776240991]
+transform = Transform3D(-0.9996344, -0.015846144, 0.021908991, -0.004134942, 0.8903339, 0.4552892, -0.026720906, 0.45503223, -0.89007396, -0.00718832, 2.8778791, -6.5612636)
