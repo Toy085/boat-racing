@@ -13,3 +13,7 @@ config_version=5
 config/name="Boat racing"
 config/features=PackedStringArray("4.7")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
