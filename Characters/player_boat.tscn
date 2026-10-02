@@ -8,6 +8,8 @@ size = Vector3(1.4, 0.72631836, 2.42688)
 
 [node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960]
 script = ExtResource("1_gu30w")
+speed = 15.0
+rotation_speed = 5.0
 
 [node name="Model" parent="." unique_id=1986020248 instance=ExtResource("1_qwkd3")]
 
