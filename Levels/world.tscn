@@ -71,3 +71,5 @@ transform = Transform3D(0.9659258, -0.22414386, -0.12940954, 0, -0.50000006, 0.8
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=874031301]
 environment = SubResource("Environment_doqwu")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1529593538]
