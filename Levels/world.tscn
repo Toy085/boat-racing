@@ -16,6 +16,9 @@ subdivide_depth = 44
 
 [node name="World" type="Node3D" unique_id=322966080]
 
+[node name="PlayerBoat" parent="." unique_id=1208065960 instance=ExtResource("2_kycxd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.40574646, 0)
+
 [node name="Water" type="MeshInstance3D" parent="." unique_id=1180752535]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 material_override = ExtResource("1_pbelu")
