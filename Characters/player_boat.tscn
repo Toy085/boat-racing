@@ -9,12 +9,15 @@ friction = 0.7
 [sub_resource type="BoxShape3D" id="BoxShape3D_0teyg"]
 size = Vector3(1.4, 0.72631836, 2.42688)
 
-[node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960 groups=["player"]]
+[node name="PlayerBoat" type="RigidBody3D" unique_id=1208065960 node_paths=PackedStringArray("floatys") groups=["player"]]
 physics_material_override = SubResource("PhysicsMaterial_gu30w")
 inertia = Vector3(0, 0.2, 0)
+linear_damp = 1.0
+angular_damp = 50.0
 script = ExtResource("1_gu30w")
 speed = 10.0
 rotation_speed = 2.0
+floatys = [NodePath("Floaty"), NodePath("Floaty2"), NodePath("Floaty3"), NodePath("Floaty4")]
 
 [node name="Model" parent="." unique_id=1986020248 instance=ExtResource("1_qwkd3")]
 
@@ -25,3 +28,15 @@ shape = SubResource("BoxShape3D_0teyg")
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1776240991]
 transform = Transform3D(-1, -2.9900352e-08, 8.215054e-08, 0, 0.9396927, 0.34202015, -8.742278e-08, 0.34202015, -0.9396927, -0.007, 4, -4.5)
 fov = 90.0
+
+[node name="Floaty" type="Node3D" parent="." unique_id=362132728]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9, 0, 1.7)
+
+[node name="Floaty2" type="Node3D" parent="." unique_id=576496110]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0, 1.7)
+
+[node name="Floaty3" type="Node3D" parent="." unique_id=238121226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9, 0, -1.7)
+
+[node name="Floaty4" type="Node3D" parent="." unique_id=1144240734]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9, 0, -1.7)

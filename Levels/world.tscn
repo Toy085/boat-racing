@@ -15,8 +15,6 @@ size = Vector2(44, 44)
 subdivide_width = 44
 subdivide_depth = 44
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_lhmx6"]
-
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_oxqbs"]
 panorama = ExtResource("7_vqnaq")
 
@@ -34,18 +32,11 @@ finish = NodePath("finish_gate")
 lap = 3
 
 [node name="PlayerBoat" parent="." unique_id=1208065960 instance=ExtResource("2_kycxd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.4057465, 0)
 
 [node name="Water" type="MeshInstance3D" parent="." unique_id=1180752535]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
 material_override = ExtResource("1_pbelu")
 mesh = SubResource("PlaneMesh_kycxd")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Water" unique_id=699733663]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Water/StaticBody3D" unique_id=705448665]
-transform = Transform3D(45, 0, 0, 0, 45, 0, 0, 0, 45, 0, -22.52, 0)
-shape = SubResource("BoxShape3D_lhmx6")
 
 [node name="finish_gate" parent="." unique_id=2033768818 groups=["Finish"] instance=ExtResource("2_ks8n1")]
 transform = Transform3D(0.9320205, 0, 0.36240557, 0, 1, 0, -0.36240557, 0, 0.9320205, 13.669798, 0, 96.4728)

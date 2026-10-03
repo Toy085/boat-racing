@@ -3,6 +3,7 @@ extends RigidBody3D
 
 @export var speed: float = 20.0
 @export var rotation_speed: float = 10.0
+@export var floatys: Array[Node3D]
 
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_pressed("ui_up"):
@@ -13,3 +14,7 @@ func _physics_process(_delta: float) -> void:
 		apply_torque(basis.y * rotation_speed)
 	if Input.is_action_pressed("ui_right"):
 		apply_torque(-basis.y * rotation_speed)
+		
+	for i in floatys:
+		if i.global_position.y < 0:
+			apply_force(Vector3.UP * 10 * -i.global_position.y, i.position)
