@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dbr03xyea7cla"]
 
-[ext_resource type="Material" path="res://Materials/EA_Water_Tropical.tres" id="1_pbelu"]
+[ext_resource type="Material" uid="uid://w4idwxhloeex" path="res://Materials/EA_Water_Tropical.tres" id="1_pbelu"]
 [ext_resource type="Script" uid="uid://d2t8y3frv26xt" path="res://Scripts/game_manager.gd" id="1_rljl1"]
 [ext_resource type="PackedScene" uid="uid://hbyjpgs4h3v4" path="res://Characters/finish_gate.tscn" id="2_ks8n1"]
 [ext_resource type="PackedScene" uid="uid://dgouuwaibpnmn" path="res://Characters/player_boat.tscn" id="2_kycxd"]
