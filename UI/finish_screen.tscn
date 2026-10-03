@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dgiokvv4r13xo"]
 
-[ext_resource type="Script" uid="uid://dddfshtevliq8" path="res://UI/restart.gd" id="1_ee7yg"]
+[ext_resource type="Script" uid="uid://dddfshtevliq8" path="res://Scripts/UI/restart.gd" id="1_ee7yg"]
 
 [sub_resource type="Theme" id="Theme_lhmx6"]
 default_font_size = 25

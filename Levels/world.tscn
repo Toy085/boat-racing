@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bcpvlywiqiicm" path="res://Characters/checkpoint_gate.tscn" id="6_x5oxt"]
 [ext_resource type="Texture2D" uid="uid://b52xgma58gv1j" path="res://kenney_skyboxes/Skyboxes/skybox-alien.png" id="7_vqnaq"]
 [ext_resource type="PackedScene" uid="uid://dgiokvv4r13xo" path="res://UI/finish_screen.tscn" id="9_06jdw"]
+[ext_resource type="PackedScene" uid="uid://dnme4hw2e2b7d" path="res://UI/hud.tscn" id="10_7ey7r"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_kycxd"]
 size = Vector2(44, 44)
@@ -73,3 +74,5 @@ environment = SubResource("Environment_doqwu")
 
 [node name="Finish screen" parent="UI" unique_id=1503192447 instance=ExtResource("9_06jdw")]
 visible = false
+
+[node name="HUD" parent="UI" unique_id=992445898 instance=ExtResource("10_7ey7r")]
