@@ -9,7 +9,9 @@ extends RigidBody3D
 @export var floatys: Array[Node3D]
 @export var buoyancy: float = 10.0
 
-func _physics_process(_delta: float) -> void:
+var rs: float = rotation_speed
+
+func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("ui_up"):
 		apply_central_force(basis.z * speed)
 	if Input.is_action_pressed("ui_down"):
@@ -18,6 +20,12 @@ func _physics_process(_delta: float) -> void:
 		apply_torque(Vector3.UP * rotation_speed)
 	if Input.is_action_pressed("ui_right"):
 		apply_torque(-Vector3.UP * rotation_speed)
+	
+	if Input.is_action_pressed("drift"):
+		rotation_speed += 1 * delta
+		rotation_speed = clampf(rotation_speed, rs, rs*2)
+	else:
+		rotation_speed = rs
 		
 	for i in floatys:
 		if i.global_position.y < 0:
