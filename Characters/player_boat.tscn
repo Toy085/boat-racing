@@ -13,10 +13,8 @@ size = Vector3(1.4, 0.72631836, 2.42688)
 physics_material_override = SubResource("PhysicsMaterial_gu30w")
 inertia = Vector3(0, 0.2, 0)
 linear_damp = 1.0
-angular_damp = 50.0
+angular_damp = 5.0
 script = ExtResource("1_gu30w")
-speed = 10.0
-rotation_speed = 2.0
 floatys = [NodePath("Floaty"), NodePath("Floaty2"), NodePath("Floaty3"), NodePath("Floaty4")]
 
 [node name="Model" parent="." unique_id=1986020248 instance=ExtResource("1_qwkd3")]

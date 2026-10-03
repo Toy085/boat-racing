@@ -1,9 +1,13 @@
 @icon("res://addons/at-icons/node3d/boat.svg")
 extends RigidBody3D
 
+@export_group("Speed")
 @export var speed: float = 20.0
-@export var rotation_speed: float = 10.0
+@export var rotation_speed: float = 1.0
+
+@export_group("Buoyancy")
 @export var floatys: Array[Node3D]
+@export var buoyancy: float = 10.0
 
 func _physics_process(_delta: float) -> void:
 	if Input.is_action_pressed("ui_up"):
@@ -11,10 +15,10 @@ func _physics_process(_delta: float) -> void:
 	if Input.is_action_pressed("ui_down"):
 		apply_central_force(-basis.z * speed / 1.5)
 	if Input.is_action_pressed("ui_left"):
-		apply_torque(basis.y * rotation_speed)
+		apply_torque(Vector3.UP * rotation_speed)
 	if Input.is_action_pressed("ui_right"):
-		apply_torque(-basis.y * rotation_speed)
+		apply_torque(-Vector3.UP * rotation_speed)
 		
 	for i in floatys:
 		if i.global_position.y < 0:
-			apply_force(Vector3.UP * 10 * -i.global_position.y, i.position)
+			apply_force(Vector3.UP * buoyancy * -i.global_position.y, i.global_position - global_position)
