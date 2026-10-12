@@ -16,4 +16,4 @@ func update_lap_label(lap: int):
 	if not max_lap - lap == max_lap:
 		lap_label.text = "[b]%d[/b]/%d" % [max_lap - lap +1, max_lap]
 	else:
-		lap_label.text = "[b]%d[/b]/%d" % [max_lap, max_lap]
+		lap_label.text = "[wave amp=50.0 freq=5.0][rainbow][b]%d[/b][/rainbow][/wave]/%d" % [max_lap, max_lap]
