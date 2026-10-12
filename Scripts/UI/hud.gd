@@ -1,8 +1,13 @@
 extends Control
 
+@onready var lap_label: RichTextLabel = $LapLabel
+
 func _ready() -> void:
-	pass # Replace with function body.
+	update_lap_label()
 
 
 func _process(_delta: float) -> void:
 	pass
+
+func update_lap_label():
+	lap_label.text = "[b]1[/b]/3"
