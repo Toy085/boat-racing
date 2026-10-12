@@ -23,6 +23,7 @@ enabled=PackedStringArray("res://addons/at-icons/plugin.cfg", "res://addons/godo
 [global_group]
 
 player=""
+GameManager=""
 
 [input]
 

@@ -26,7 +26,7 @@ sky_material = SubResource("PanoramaSkyMaterial_oxqbs")
 background_mode = 2
 sky = SubResource("Sky_m15cp")
 
-[node name="World" type="Node3D" unique_id=322966080 node_paths=PackedStringArray("checkpoints", "finish")]
+[node name="World" type="Node3D" unique_id=322966080 node_paths=PackedStringArray("checkpoints", "finish") groups=["GameManager"]]
 script = ExtResource("1_rljl1")
 checkpoints = [NodePath("Checkpoints/CheckpointGate3"), NodePath("Checkpoints/CheckpointGate"), NodePath("Checkpoints/CheckpointGate2")]
 finish = NodePath("Checkpoints/finish_gate")
